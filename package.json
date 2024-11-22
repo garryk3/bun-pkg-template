@@ -9,11 +9,12 @@
     "type": "git",
     "url": "https://github.com:garryk3/bun-pkg-template.git"
   },
-  "types": "./types/index.d.ts",
+  "types": "./types/src/index.d.ts",
   "exports": {
     ".": "./dist/index.js",
     "./types/*": "./types/*.d.ts",
     "./types": "./types/index.d.ts",
+    "./packages": "./src/index.ts",
     "./types/index.d.ts": "./types/index.d.ts"
   },
   "scripts": {
