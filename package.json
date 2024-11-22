@@ -25,6 +25,10 @@
     "build-lib": "bun build ./src/index.ts --outdir ./dist --target browser --minify --format esm",
     "build": "rm -rf dist && rm -rf types && bun run build-lib & tsc --p tsconfig.build.json"
   },
+  "browserslist": [
+    "chrome > 83",
+    "safari > 14.0"
+  ],
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged --no-stash",
     "pre-push": "bun run test",
