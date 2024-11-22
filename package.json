@@ -17,6 +17,9 @@
     "./packages": "./src/index.ts",
     "./types/index.d.ts": "./types/index.d.ts"
   },
+  "imports": {
+    "#src/*": "./src/*"
+  },
   "scripts": {
     "check-lint": "eslint --max-warnings=0 --fix",
     "check-types": "tsc --noEmit",
